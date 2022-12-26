@@ -1,0 +1,494 @@
+/********TEXT********/
+body, html {
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+    font-size: 36px !important;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+}
+
+h2 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+    font-size: 20px;
+}
+
+p {
+    text-align: left;
+    color:  #333333;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.parallax-text {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+    font-size: 18px;
+}
+
+.text-block {
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text-block1 {
+    margin: 0;
+    padding: 50vh;
+}
+
+.title {
+    font-size: 60px !important;
+}
+
+.blue-text {
+    color: #1686C1;
+}
+
+.green-text {
+    color: #178A27;
+}
+
+.red-text {
+    color: #666666;
+}
+
+/***********nav bar**********/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+}
+
+li {
+    list-style: none;
+
+}
+
+.navbar {
+    overflow: auto;
+    margin: 0;
+    width: 100vw;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.nav-links a {
+    color: black;
+
+}
+
+.menu {
+    display: inline-flex;
+    font-size: 18px;
+    align-content: center;
+
+}
+
+.menu li:hover {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    transition-duration: 0.3s ease;
+
+}
+
+.menu li {
+    padding: 5px 14px;
+
+}
+
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 18px;
+    user-select: none;
+}
+
+/***********parallax effect***********/
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+  
+.no-parallax {
+    background-color: white;
+    height: auto;
+    
+}
+  
+section h1 {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.parallax.bg1 {
+    background-image: url("imgs/bg-1.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform-style: preserve-3d;
+ 
+}
+
+.parallax.bg2 {
+    background-image: url("imgs/bg-2.jpg");
+    min-height: 35vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+.parallax.bg3 {
+    background-image: url(imgs/bg-3.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+/*************columns************/
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 15px;
+    padding-bottom: 50px;
+    float: left;
+    width: 33.3333%;
+}
+
+.responsive2 {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+.responsive3 {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+.responsive4 {
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+/**image containers**/
+.row {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.row2 {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.row3 {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.row4 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.column { 
+    background-color: #f0f0f0;
+}
+
+div.column img {
+    width: 100%;
+    height: auto;
+} 
+
+/**clear floats after image containers**/
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/**********cards***********/
+.card {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/*******buttons*********/
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+}
+
+.button3:hover {
+    background-color: black;
+    color: white;
+}
+
+.button4:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+.button1 {
+    background-color: #178A27;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.button2 {
+    background-color: #1686C1;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.button3 {
+    background-color: #852406;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.button4 {
+    margin: 4px 2px;
+    padding: 15px 30px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+/*********form********/
+.cform {
+    text-align: center;
+    margin: 0px;
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 16px;
+    padding: 20px 15px;
+    color: black;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: both;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px 20px 15px 20px;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.row5 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: wrap;
+    flex-wrap: wrap;
+    margin: 0 33px;
+}
+
+.row6 {
+    padding-left: 43%;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: none;
+        position: relative;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: whitesmoke;
+        transition-duration: 0.3s ease;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    section h1 {
+      font-size: 8rem;
+    }
+    .parallax h1 {
+      font-size: 4rem;
+    }
+}
+
+@media only screen and (max-device-wdith: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive2 {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .responsive3 {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .col-50 {
+        width: 100%;
+        margin-top: 0;
+        float: left;
+    }
+
+    .row5 {
+        flex-direction: column-reverse;
+    }
+}
